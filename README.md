@@ -1,10 +1,11 @@
 # FileTree
 ```
-Dependencies: treelib, os
+pip install file-tree-ds
 ```
+#### Description
 Extension of treelib to provide handy utilities for making directories with ML/data science experiments in mind.
 Two ways of creating trees
-1. 'node view' this has finer control of appending to the tree (termed *unique node tree*)
+1. 'node view' this has fine control of appending nodes to create a tree
 1. 'product view' this includes list of lists - each list is created in sublevel of element of higher level list (termed *product tree*). For example if inputting a list of lists `[[a,b],[C,D]]` we would expect the following tree 
 
 ```

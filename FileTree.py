@@ -55,9 +55,10 @@ class FileTree(Tree):
                 if path not in paths:
                     paths += [path]
                     
-        if len(paths)>0:
+        if assert_on_disk and len(paths)>0:
             for path in paths:
-                assert(os.path.isdir(path))
+                if not os.path.isdir(path):
+                    raise ValueError('Path not detected on disk')
         return paths
     
 
