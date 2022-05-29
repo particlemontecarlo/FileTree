@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="file-tree-ds",
-    version="1.0.0",
+    version="1.0.1",
     author="Lawrence M",
     author_email="lm3263658@gmail.com",
     description="A tool to create directories for data science project",
