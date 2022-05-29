@@ -30,3 +30,22 @@ Tree data structure recap:
 1. Node data -- in this case carrying the name of a folder -- is stored in the node `tag` property
 
 See https://treelib.readthedocs.io/en/latest/ for more details.
+
+#### Simple example
+The following provides an example of the 'node view'.
+
+```
+from FileTree.FileTree import FileTree
+
+tree = FileTree()
+n1 = tree.create_node('node1',identifier='1')
+n2 = tree.create_node('node2',identifier='2', parent='1')
+n3 = tree.create_node('node3',identifier='3', parent='1')
+node = tree.create_node('node4',identifier='4',parent='3')
+
+tree.show()
+
+print(tree.path_search('node2',assert_on_disk=False)) 
+print(tree.path_search('node4',assert_on_disk=False))
+
+```
