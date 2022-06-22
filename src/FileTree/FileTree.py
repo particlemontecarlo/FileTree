@@ -106,6 +106,10 @@ class FileTree(Tree):
                 
             os.makedirs( dir_str, exist_ok=exist_ok )
             
+            # to implement... pass arguments through to makedirs
+            # to implement... return historical searches, like autocomplete
+            # catalogged az data set
+            
         print('\nwritten directory tree -- (exist_ok={})'.format(exist_ok))
         
 
